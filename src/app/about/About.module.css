@@ -1,0 +1,95 @@
+/* Main container for the About page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+  }
+  
+  /* Heading styling for both About Us and Our Story (centered and same size) */
+  .heading, .subheading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3c70b4;  /* Replaced #6A0DAD */
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  /* Centered Subheading Styling */
+  .centeredSubheading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: normal;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Center the text section */
+  .textSection {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Story section styling, center the text */
+  .storySection {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1.5s;
+  }
+  
+  /* Image styling with fade-in effect */
+  .image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .heading, .subheading {
+      font-size: 2.5rem;
+    }
+  
+    .textSection, .storySection {
+      font-size: 1rem;
+    }
+  
+    .image {
+      width: 90%;
+    }
+  }
+  

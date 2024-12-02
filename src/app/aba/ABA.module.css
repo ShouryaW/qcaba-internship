@@ -1,0 +1,117 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heroSection {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.mainTitle {
+  font-size: 2.8rem;
+  color: #3c70b4;
+}
+
+.introText {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.infoBlock {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initial state for fade-in animation */
+  transform: translateY(20px); /* Initial transform for fade-in */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.infoBlock.visible {
+  opacity: 1; /* Visible state after animation */
+  transform: translateY(0); /* Reset transform */
+}
+
+.infoBlock h2 {
+  font-size: 1.8rem;
+  color: #3c70b4;
+}
+
+.infoBlock p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.applicationSection {
+  margin: 60px 0;
+}
+
+.applicationSection h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #3c70b4;
+  margin-bottom: 40px;
+  opacity: 0; /* Initial state */
+  transform: translateY(20px); /* Initial transform */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.applicationSection h2.visible {
+  opacity: 1; /* Visible state */
+  transform: translateY(0); /* Reset transform */
+}
+
+.applicationBlock {
+  text-align: center;
+  margin-bottom: 40px;
+  opacity: 0; /* Initial state for fade-in animation */
+  transform: translateY(20px); /* Initial transform */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.applicationBlock.visible {
+  opacity: 1; /* Visible state after animation */
+  transform: translateY(0); /* Reset transform */
+}
+
+.applicationBlock h3 {
+  font-size: 1.5rem;
+  color: #3c70b4;
+  margin: 20px 0 10px;
+}
+
+.applicationBlock p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Bolding the headings */
+.infoBlock h2,
+.applicationBlock h3,
+.mainTitle,
+.applicationSection h2 {
+  font-weight: 700;
+}
+
+/* Animation for fade-in on scroll */
+.fade {
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(20px); /* Initial transform */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade.visible {
+  opacity: 1; /* Visible state */
+  transform: translateY(0); /* Reset transform */
+}

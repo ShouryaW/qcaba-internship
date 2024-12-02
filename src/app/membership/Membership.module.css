@@ -1,0 +1,168 @@
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3c70b4;
+    font-weight: bold;
+  }
+  
+  /* Intro text styling */
+  .introText {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Choose your membership heading */
+  .chooseMembershipHeading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3c70b4;
+    font-weight: bold;
+  }
+  
+  /* Membership container styling */
+  .membershipContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Membership card styling */
+  .membershipCard {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .membershipCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling for the most popular card */
+  .mostPopular {
+    border: 2px solid #3c70b4;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 0 15px 5px rgba(60, 112, 180, 0.3);
+  }
+  
+  /* Banner for the most popular card */
+  .mostPopularBanner {
+    position: absolute;
+    top: -15px;  /* Fixes the overlap issue */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3c70b4;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 1;  /* Ensure the banner is above the content */
+  }
+  
+  /* Glow effect for the most popular card */
+  .mostPopular::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid rgba(60, 112, 180, 0.7);
+    z-index: -1;  /* Ensure the glow is behind the content */
+    animation: glow 4s ease-in-out infinite;
+  }
+  
+  /* Keyframes for smoother glow effect */
+  @keyframes glow {
+    0% { box-shadow: 0 0 15px 5px rgba(60, 112, 180, 0.3); }
+    50% { box-shadow: 0 0 25px 10px rgba(60, 112, 180, 0.5); }
+    100% { box-shadow: 0 0 15px 5px rgba(60, 112, 180, 0.3); }
+  }
+  
+  /* Membership title styling */
+  .membershipTitle {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #3c70b4;
+    font-weight: bold;
+  }
+  
+  /* Price styling */
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Validity styling */
+  .validity {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Benefits list styling */
+  .benefitsList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .benefitsList li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Select button styling */
+  .selectButton {
+    background-color: #3c70b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+  }
+  
+  .selectButton:hover {
+    background-color: #3c70b4;
+    transform: scale(1.05);
+  }
+  
+  .selectButton:active {
+    transform: scale(0.97);
+  }
+  

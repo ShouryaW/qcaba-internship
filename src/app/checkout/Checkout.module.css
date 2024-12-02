@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #3c70b4;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formContainer,
+.detailsContainer {
+  flex: 1;
+  min-width: 320px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subheading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #3c70b4;
+  font-weight: bold;
+}
+
+.button {
+  background: linear-gradient(to right, #6a0dad, #9b5fc1);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #5b0095, #7a3fa1);
+  transform: scale(1.03);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.membershipTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3c70b4;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}

@@ -1,0 +1,44 @@
+/* Main transition overlay covering the page */
+.transitionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none; /* Disable pointer interactions */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .transitionOverlay.active {
+    opacity: 1;
+  }
+  
+  /* Splash effect */
+  .splash {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #ffffff, #3c70b4);
+    transform: scale(0);
+    opacity: 0;
+    animation: splashEffect 0.8s forwards ease-in-out;
+  }
+  
+  /* Splash animation keyframes */
+  @keyframes splashEffect {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+  

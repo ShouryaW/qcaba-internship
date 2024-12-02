@@ -1,0 +1,95 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation with closer spacing and gradient on hover */
+.nav {
+  display: flex;
+  gap: 20px;  /* Reduced gap to bring links closer together */
+}
+
+.navLink {
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+  color: #3c70b4;  /* Solid base color to avoid blurriness */
+  text-shadow: none;  /* Remove shadow to keep text sharp */
+  letter-spacing: 0.5px;  /* Uniform letter spacing */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect: Gradient, subtle scaling, and text-shadow */
+.navLink:hover {
+  background: linear-gradient(to right, #3c70b4, #5c85d6);  /* Gradient on hover */
+  -webkit-background-clip: text;
+  color: transparent;  /* Only show gradient color */
+  transform: scale(1.05);  /* Slight scale up on hover */
+  text-shadow: none;  /* Keep no shadow to avoid blur */
+}
+
+/* Active link styling: Subtle underline and highlight */
+.navLink.active {
+  color: #5c85d6;
+  text-decoration: underline;
+}
+
+/* Animated underline on hover */
+.navLink::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #3c70b4;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer a {
+  color: #3c70b4;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active {
+  color: #3c70b4;
+}
